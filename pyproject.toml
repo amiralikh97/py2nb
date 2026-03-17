@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py2nb"
+version = "0.1.0"
+description = "Convert annotated .py files to Jupyter notebooks"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+py2nb = "py2nb.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]

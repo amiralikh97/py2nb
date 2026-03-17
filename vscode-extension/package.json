@@ -1,0 +1,39 @@
+{
+  "name": "py2nb",
+  "displayName": "py2nb",
+  "description": "Convert the active .py file to a Jupyter notebook using cell separators",
+  "version": "0.1.0",
+  "publisher": "AmiraliKh",
+  "engines": { "vscode": "^1.74.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onLanguage:python"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "py2nb.convert",
+        "title": "py2nb: Convert to Notebook",
+        "icon": "$(notebook)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "py2nb.convert",
+          "when": "resourceLangId == python",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "py2nb",
+      "properties": {
+        "py2nb.pythonPath": {
+          "type": "string",
+          "default": "python",
+          "description": "Python interpreter to use (e.g. /usr/bin/python3 or a conda env path)"
+        }
+      }
+    }
+  }
+}

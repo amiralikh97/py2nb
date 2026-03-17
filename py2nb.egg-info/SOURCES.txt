@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+py2nb/__init__.py
+py2nb/__main__.py
+py2nb/cli.py
+py2nb/converter.py
+py2nb.egg-info/PKG-INFO
+py2nb.egg-info/SOURCES.txt
+py2nb.egg-info/dependency_links.txt
+py2nb.egg-info/entry_points.txt
+py2nb.egg-info/top_level.txt
