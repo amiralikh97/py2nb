@@ -3,7 +3,13 @@
   "displayName": "py2nb",
   "description": "Convert the active .py file to a Jupyter notebook using cell separators",
   "version": "0.1.0",
-  "publisher": "AmiraliKh",
+  "publisher": "amiralikh76",
+  "license": "MIT",
+  "homepage": "https://github.com/amiralikh97/py2nb",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amiralikh97/py2nb"
+  },
   "engines": { "vscode": "^1.74.0" },
   "categories": ["Other"],
   "activationEvents": ["onLanguage:python"],
